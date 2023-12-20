@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2919964776.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <section id="landing">
+    <nav>
+      <div class="nav__container">
+        <a href="#">
+          <i class="fa-solid fa-t logo"></i> <span class="logo__name">Treact</span>
+        </a>
+  
+        <ul class="link__list">
+          <li><a href="#" class="nav__links">About</a></li>
+          <li><a href="#" class="nav__links">Blog</a></li>
+          <li><a href="#" class="nav__links">Pricing</a></li>
+          <li><a href="#" class="nav__links">Contact Us</a></li>
+          <li><a href="#" class="nav__links">Login</a></li>
+          <li><a href="#" class="nav__links nav__link--primary">Sign Up</a></li>
+        </ul>
+
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars hamburger__menu"></i>
+      </button>
+      
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times x__btn"></i>
+        </button>
+
+        <ul>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+          </li>
+          <li class="menu__list">
+            <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+          </li>
+          <li class="menu__list btn__list">
+            <a href="#" class="menu__link btn__link" onclick="closeMenu()">Sign Up</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    </nav>  
+
+    <header>
+      <div class="header__container">
+        <div class="row header__row">
+
+          <div class="header__information">
+            <h1 class="header__description">Beautiful React Templates <span class="purple">for you.</span></h1>
+            <div class="header__para--wrapper">
+              <p class="header__para">
+                Our templates are easy to setup,
+                understand and customize. Fully modular 
+                components with a variety of pages and components.
+              </p>
+            </div>
+            
+            <div class="email__input--wrapper">
+              <div class="header__input">
+                <input type="email" placeholder="Your E-mail Address" class="email__input">
+                <button class="header__btn">Get Started</button>
+              </div>
+            </div>
+            
+            <div class="customer__info--wrapper">
+              <p class="customers">OUR TRUSTED CUSTOMERS</p>
+              <figure class="customers__img--wrapper">
+                <img src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="" class="customers__img">
+              </figure>
+            </div>
+          </div>
+          
+          <figure class="header__img--wrapper">
+            <img src="./assets/undraw_winter_designer_a-2-m7.svg" alt="undraw picture" class="header__img">
+          </figure>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <main>
+    <section id="features">
+      <div class="container features__container">
+        <div class="row features__row">
+          <h4 class="purple features__title">FEATURES</h4>
+          <h2 class="features__info h2__info">We have Amazing <span class="purple">Service.</span></h2>
+          <div class="para--wrapper">
+            <p class="features__para">Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="features__showcase">
+            <div class="features__example">
+              <figure>
+                <img src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="" class="features__img">
+              </figure>
+              <div class="text--wrapper">
+                <p class="features__example--title">Secure</p>
+                <p class="features__example--info">
+                  We strictly only deal with vendors that provide top notch security.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__example">
+              <figure>
+                <img src="https://treact.owaiskhan.me/static/media/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="" class="features__img">
+              </figure>
+              <div class="text--wrapper">
+                <p class="features__example--title">24/7 Support</p>
+                <p class="features__example--info">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__example">
+              <figure>
+                <img src="	https://treact.owaiskhan.me/static/media/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="" class="features__img">
+              </figure>
+              <div class="text--wrapper">
+                <p class="features__example--title">Customizable</p>
+                <p class="features__example--info">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__example">
+              <figure>
+                <img src="	https://treact.owaiskhan.me/static/media/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="" class="features__img">
+              </figure>
+              <div class="text--wrapper">
+                <p class="features__example--title">Reliable</p>
+                <p class="features__example--info">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__example">
+              <figure>
+                <img src="	https://treact.owaiskhan.me/static/media/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="" class="features__img">
+              </figure>
+              <div class="text--wrapper">
+                <p class="features__example--title">Fast</p>
+                <p class="features__example--info">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__example">
+              <figure>
+                <img src="	https://treact.owaiskhan.me/static/media/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="" class="features__img">
+              </figure>
+              <div class="text--wrapper">
+                <p class="features__example--title">Easy</p>
+                <p class="features__example--info">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quality__design">
+      <div class="container">
+        <div class="row quality_design__row">
+          <div class="quality_design__info">
+            <h4 class="purple">QUALITY WORK</h4>
+            <h2>Designed & Developed by <span class="purple">Professionals</span></h2>
+            <div class="para--wrapper--2">
+              <p class="quality_design__para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <button class="btn">Learn More</button>
+          </div>
+
+          <figure class="img__wrapper">
+            <img src="https://treact.owaiskhan.me/static/media/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="" class="first__img">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps">
+      <div class="container">
+        <div class="row row__steps">
+          
+          <div class="steps__list--container">
+            
+            <h4 class="purple">STEPS</h4>
+            <h2>Easy to <span class="purple">Get Started.</span></h2>
+            
+            <div class="steps__list">
+              <p class="number__list">01</p>
+              <div class="steps__info">
+                <p class="list__header">Register</p>
+                <p class="list__info">Create an account with us using Google or Facebook.</p>
+              </div>
+            </div>
+            
+            <div class="steps__list">
+              <p class="number__list">02</p>
+              <div class="steps__info">
+                <p class="list__header">Download</p>
+                <p class="list__info">Browse and Download the template that you like from the marketplace.</p>
+              </div>
+            </div>
+            
+            <div class="steps__list">
+              <p class="number__list">03</p>
+              <div class="steps__info">
+                <p class="list__header">Run</p>
+                <p class="list__info">Follow the instructions to setup and customize the template to your needs.</p>
+              </div>
+            </div>
+          
+          </div>
+
+          <figure class="img__wrapper second__img--wrapper">
+            <img src="https://treact.owaiskhan.me/static/media/hero-screenshot-2.241aac1fbc66db29d873.png" alt="" class="second__img">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="values">
+      <div class="container">
+        <div class="row values__row">
+
+          <div class="values__info--wrapper">  
+            <h4 class="purple">VALUES</h4>
+            <h2>We Always Abide by Our <span class="purple">Principles.</span></h2>
+            
+            <p class="values__info--para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna 
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="values__key_point--container">
+              
+              <div class="values__key_point--wrapper">
+                <div class="values__special_point--wrapper">
+                  <i class="fa-solid fa-dollar-sign money__img"></i>
+                  <p class="values__special_point--title">Affordable</p>
+                </div>
+                
+                <p class="values__special_point--para">We promise to offer you the best rate we can - 
+                  at par with the industry standard.</p>
+                </div>
+                
+                <div class="values__key_point--wrapper">
+                  <div class="values__special_point--wrapper">
+                    <i class="fas fa-suitcase case__img"></i>
+                    <p class="values__special_point--title">Professionalism</p>
+                  </div>
+                  
+                  <p class="values__special_point--para">We assure you that our templates 
+                    are designed and created by professional designers.
+                  </p>
+                  </div>
+                </div>
+                
+                <button class="btn">Learn More</button>
+              </div>
+
+              <figure class="third__img--wrapper">
+                <img src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="" class="third__img">
+              </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="row pricing__row">
+          <h4 class="purple pricing__title">PRICING</h4>
+          <h2 class="pricing__top_info">Reasonable & Flexible <span class="purple">Plans.</span></h2>
+          <p class="pricing__top--para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua.
+          </p>
+
+          <div class="plans__container">
+            <div class="plan__wrapper">
+
+              <div class="top__box--color"></div>
+              <div class="plan">
+                <p class="plan__type">PERSONAL</p>
+                <p class="plan__price">$17.99</p>
+                <p class="plan__cycle">MONTHLY</p>
+                
+                <div class="middle__box">
+                  <p class="plan__target">For Individuals</p>
+                  
+                  <p class="plan__items templates">30 Templates</p>
+                  <p class="plan__items">7 Landing Pages</p>
+                  <p class="plan__items">12 Internal Pages</p>
+                  <p class="plan__items">Basic Assistance</p>
+                </div>
+                
+                <button class="plan__btn plan__btn--1">BUY NOW</button>
+                
+              </div>
+            </div>
+            
+            <div class="plan__wrapper">
+
+              <div class="top__box--color--2"></div>
+              <div class="plan--2">
+                <p class="plan__type plan__2--info">BUSINESS</p>
+                <p class="plan__price plan__2--info">$37.99</p>
+                <p class="plan__cycle plan__2--info">MONTHLY</p>
+                
+                <div class="middle__box">
+                  <p class="plan__target plan__2--info">For Small Businesses</p>
+                  
+                  <p class="plan__items templates plan__2--info">60 Templates</p>
+                  <p class="plan__items plan__2--info">15 Landing Pages</p>
+                  <p class="plan__items plan__2--info">22 Internal Pages</p>
+                  <p class="plan__items plan__2--info">Priority Assistance</p>
+                </div>
+                
+                <button class="plan__btn plan2__btn--color">BUY NOW</button>
+                
+              </div>
+            </div>
+
+            <div class="plan__wrapper">
+
+              <div class="top__box--color--3"></div>
+              <div class="plan">
+                <p class="plan__type">ENTERPRISE</p>
+                <p class="plan__price">$57.99</p>
+                <p class="plan__cycle">MONTHLY</p>
+                
+                <div class="middle__box">
+                  <p class="plan__target">For Large Companies</p>
+                  
+                  <p class="plan__items templates">90 Templates</p>
+                  <p class="plan__items">27 Landing Pages</p>
+                  <p class="plan__items">37 Internal Pages</p>
+                  <p class="plan__items">Personal Assistance</p>
+                </div>
+                
+                <button class="plan__btn plan3__btn--color">BUY NOW</button>
+                
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="row testimonial__row">
+
+          <div class="testimonial__info--wrapper">
+            <h4 class="purple">TESTIMONIALS</h4>
+            <h2 class="h2__info">Our Clients <span class="purple">Love Us.</span></h2>
+            <p class="testimonial__info--para">
+              Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua 
+              enim ad minim veniam.
+            </p>
+
+            <div class="testimonial__display--wrapper">
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+
+              <p class="user__review--title">Amazing User Experience</p>
+              <p class="user__review--para">
+                Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Accusantium aliquam nulla 
+                eveniet numquam ad facilis qui quo nisi 
+                asperiores, reprehenderit eos unde sed 
+                corrupti iusto illum officiis laboriosam 
+                earum ut. Accusantium aliquam nulla 
+                eveniet numquam ad facilis qui quo nisi 
+                asperiores, reprehenderit eos unde
+              </p>
+
+              <div class="user__profile--wrapper">
+                <div class="profile__container">
+                  <figure class="user__profile_picture--wrapper">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80" alt="" class="user__profile_picture">
+                    
+                  </figure>
+                  <div class="user__profile--info">
+                    <p class="user__profile--name">
+                      Charlotte Hale
+                    </p>
+                    <p class="user__profile--occupation">Director, Delos Inc.</p>
+                  </div>
+                </div>
+
+
+                <div class="arrow__wrapper">
+                  <i class="fa-solid fa-arrow-left arrow"></i>
+                  <div class="line__split"></div>
+                  <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <figure class="fourth__img--wrapper">
+            <img src="https://treact.owaiskhan.me/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="fourth img" class="fourth__img">
+          </figure>
+    </section>
+
+    <section id="FAQS">
+      <div class="container">
+        <div class="row faqs__row">
+          <h4 class="purple">FAQS</h4>
+          <h2 class="">You Have <span class="purple">Questions ?</span></h2>
+          <p class="faqs__title--para">
+            And we have got answers to all of them. 
+            Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit.
+          </p>
+
+          <div class="question__container">
+
+            <p class="question">
+              Are all the templates easily customizable ?
+            </p>
+            
+            <i class="fa-solid fa-angle-up question__arrow"></i>
+          </div>
+
+          <div class="question__container">
+
+            <p class="question">
+              How long do you usually support a standalone template for ?
+            </p>
+            
+            <i class="fa-solid fa-angle-up question__arrow"></i>
+          </div>
+
+          <div class="question__container">
+
+            <p class="question">
+              What kind of payment methods do you accept ?
+            </p>
+            
+            <i class="fa-solid fa-angle-up question__arrow"></i>
+          </div>
+
+          <div class="question__container">
+
+            <p class="question">
+              Is there a subscription service to get the latest templates ?
+            </p>
+            
+            <i class="fa-solid fa-angle-up question__arrow"></i>
+          </div>
+
+          <div class="question__container">
+
+            <p class="question">
+              Are the templates compatible with React ?
+            </p>
+            
+            <i class="fa-solid fa-angle-up question__arrow"></i>
+          </div>
+
+          <div class="question__container">
+
+            <p class="question">
+              Do you really support Interent Explorer 11 ?
+            </p>
+            
+            <i class="fa-solid fa-angle-up question__arrow"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="final__box">
+    <div class="container">
+      <div class="row">
+        <div class="final__reach">
+          <h5 class="final__reach--statement">
+            Developers all over the world are happily using Treact. 
+          </h5>
+
+          <div class="btn__wrapper">
+            <button class="final__btn">Get Started</button>
+            <button class="final__btn--2">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="footer">
+  <div class="footer__container">
+    <div class="footer__row">
+      <div class="footer__wrapper">
+          <div class="footer__list--wrapper">
+            <h5 class="footer__list--title">MAIN</h5>
+            <ul>
+              <li class="list__decoration"><a href="#" class="footer__list--info">Blog</a></li>
+              <li class="list__decoration"><a href="#" class="footer__list--info">FAQs</a></li>
+              <li class="list__decoration"><a href="#" class="footer__list--info">Support</a></li>
+              <li class="list__decoration"><a href="#" class="footer__list--info">About Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__list--wrapper">
+            <h5 class="footer__list--title">PRODUCT</h5>
+            <ul>
+              <li class="list__decoration"><a href="#" class="footer__list--info">Log In</a></li>
+              <li class="list__decoration"><a href="#" class="footer__list--info">Personal</a></li>
+              <li class="list__decoration"><a href="#" class="footer__list--info">Business</a></li>
+              <li class="list__decoration"><a href="#" class="footer__list--info">Team</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__list--wrapper">
+            <h5 class="footer__list--title">PRESS</h5>
+          <ul>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Logos</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Events</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Stories</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Office</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__list--wrapper">
+          <h5 class="footer__list--title">TEAM</h5>
+          <ul>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Career</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Founders</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Culture</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Onboarding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__list--wrapper">
+          <h5 class="footer__list--title">LEGAL</h5>
+          <ul>
+            <li class="list__decoration"><a href="#" class="footer__list--info">GDPR</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Privacy Policy</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Terms of Service</a></li>
+            <li class="list__decoration"><a href="#" class="footer__list--info">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="middle__line"></div>
+
+      <div class="footer__final--wrapper">
+        <a href="#">
+          <i class="fa-solid fa-t footer__logo"></i> <span class="footer__logo--name">Treact Inc.</span>
+        </a>
+
+        <p class="copyright">© 2018 Treact Inc. All Rights Reserved.</p>
+        
+        <div class="social_media--wrapper">
+
+          <div class="social_media__logo--wrapper">
+            <i class="fa-brands fa-facebook-f social__media--logo"></i>
+          </div>
+
+          <div class="social_media__logo--wrapper">
+            <i class="fa-brands fa-twitter social__media--logo"></i>
+          </div>
+
+          <div class="social_media__logo--wrapper">
+            <i class="fa-brands fa-youtube social__media--logo"></i>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+<!--Make sure to change width of header container to 100% when changing to 1023px so the elements are better at adjusting-->
